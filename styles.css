@@ -1,0 +1,124 @@
+/* General =================================================== */
+* {
+  font-family: "Overpass", sans-serif;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  height: 100%;
+}
+
+/* Container */
+.rating,
+.ty {
+  display: none;
+  background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+  border-radius: 15px;
+  width: 350px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Rating Styles */
+
+.rating img {
+  width: max-content;
+  padding: 13px;
+  background-color: hsl(216, 12%, 54%);
+  border-radius: 50%;
+}
+
+.rating h1 {
+  font-size: 1.6em;
+}
+
+.rating p {
+  color: hsl(217, 12%, 63%);
+}
+
+.select-rating {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.select-rating div {
+  background-color: hsl(216, 12%, 30%);
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+}
+
+.rating-button:hover{
+ background-color: hsl(216, 12%, 30%);
+ color: white;
+}
+
+div.selected-button {
+    background-color: hsl(25, 97%, 53%) !important;
+    color: white;
+}
+
+#submit {
+  height: 3em;
+  border-radius: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 3em;
+  background-color: hsl(25, 97%, 53%);
+}
+
+#submit:hover {
+    background-color: white;
+    color:hsl(25, 97%, 53%);
+}
+.show {
+  z-index: 1;
+}
+
+/* Thank-You Styles */
+.ty {
+  align-items: center;
+}
+.ty img {
+  width: 50%;
+}
+
+.ty .confirmation-message {
+  max-width: fit-content;
+  padding: 0 1em;
+  text-align: center;
+  line-height: 2em;
+  height: 2em;
+  border-radius: 1em;
+  background-color: hsl(216, 12%, 30%);
+  color: hsl(25, 97%, 53%);
+}
+
+.ty h1 {
+  font-size: 1.6em;
+}
+
+.ty p {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
