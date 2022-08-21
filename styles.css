@@ -3,27 +3,31 @@
   font-family: "Overpass", sans-serif;
   box-sizing: border-box;
   font-size: 15px;
+  margin: 0;
 }
 
 body {
   background-color: black;
   color: white;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:
 }
 
 /* Container */
 .rating,
 .ty {
   display: none;
-  background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
-  border-radius: 15px;
-  width: 350px;
-  height: 400px;
+  background: linear-gradient(#212730, #212730);
+  border-radius: 20px;
+  width: 330px;
+  height: 365px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px;
+  padding: 23px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,7 +38,7 @@ body {
 .rating img {
   width: max-content;
   padding: 13px;
-  background-color: hsl(216, 12%, 54%);
+  background-color: #262f38;
   border-radius: 50%;
 }
 
@@ -48,16 +52,16 @@ body {
 
 .select-rating {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .select-rating div {
-  background-color: hsl(216, 12%, 30%);
+  background-color:#262f38;
   color: hsl(217, 12%, 63%);
   text-align: center;
-  width: 2em;
-  height: 2em;
-  line-height: 2em;
+  width: 2.75em;
+  height: 2.75em;
+  line-height: 2.75em;
   border-radius: 50%;
 }
 
@@ -76,6 +80,7 @@ div.selected-button {
   border-radius: 1.5em;
   text-transform: uppercase;
   text-align: center;
+  font-weight: bold;
   line-height: 3em;
   background-color: hsl(25, 97%, 53%);
 }
@@ -91,6 +96,8 @@ div.selected-button {
 /* Thank-You Styles */
 .ty {
   align-items: center;
+  justify-content: center;
+  gap: 22px;
 }
 .ty img {
   width: 50%;
@@ -103,7 +110,7 @@ div.selected-button {
   line-height: 2em;
   height: 2em;
   border-radius: 1em;
-  background-color: hsl(216, 12%, 30%);
+  background-color: #262f38;
   color: hsl(25, 97%, 53%);
 }
 
@@ -113,6 +120,7 @@ div.selected-button {
 
 .ty p {
   text-align: center;
+  color: hsl(217, 12%, 63%);
 }
 
 /* Footer */
